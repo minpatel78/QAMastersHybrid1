@@ -8,7 +8,7 @@ Feature: I want to add item to cart and  purchase item
     When User enter email as "mineshautomation@gmail.com" and password as "automation@123"
     And User selects SignIn
 
-  #happy path scenario
+  #happy path scenario for checkout
 
   @checkout @smoke
   Scenario: Add product to cart
