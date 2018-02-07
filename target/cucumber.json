@@ -1,0 +1,1454 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 130077014,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on the home page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 6,
+            "value": "#happy path scenario"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 10883928320,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Add item to cart from search",
+        "description": "",
+        "id": "i-want-to-add-item-to-cart-so-i-can--purchase-the-item;add-item-to-cart-from-search",
+        "after": [
+          {
+            "result": {
+              "duration": 806324480,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 33780906,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I see search",
+            "match": {
+              "location": "AddToCartStep.onSearchBox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 95955627,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I type search item \"t-shirt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "t-shirt",
+                  "offset": 20
+                }
+              ],
+              "location": "AddToCartStep.enterSearchItem(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1498529707,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I select search",
+            "match": {
+              "location": "AddToCartStep.submitSearchItem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131828053,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select a product\"Faded Short Sleeve T-shirts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Faded Short Sleeve T-shirts",
+                  "offset": 19
+                }
+              ],
+              "location": "AddToCartStep.selectItemForCart(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76020480,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I select AddItemToCart",
+            "match": {
+              "location": "AddToCartStep.selectAddItemToCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2044163840,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should see message \"Product successfully added to your shopping cart\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Product successfully added to your shopping cart",
+                  "offset": 22
+                }
+              ],
+              "location": "AddToCartStep.seeMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@search"
+          },
+          {
+            "line": 8,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "I want to add item to cart so i can  purchase the item",
+    "description": "",
+    "id": "i-want-to-add-item-to-cart-so-i-can--purchase-the-item",
+    "keyword": "Feature",
+    "uri": "AddToCart.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6207574,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the home page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1755330133,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User selects SignIn link",
+            "match": {
+              "location": "LoginSteps.selctSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79576320,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User should be on the login page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnLoginpage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 287044693,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enter email as \"mineshautomation@gmail.com\" and password as \"automation@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mineshautomation@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 66
+                }
+              ],
+              "location": "LoginSteps.enterLoginCredentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1117303466,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User selects SignIn",
+            "match": {
+              "location": "LoginSteps.selectSignIn()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 11,
+            "value": "#happy path scenario"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 11645365760,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Add product to cart",
+        "description": "",
+        "id": "i-want-to-add-item-to-cart-and--purchase-item;add-product-to-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 867071573,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 49677653,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I see search",
+            "match": {
+              "location": "AddToCartStep.onSearchBox()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 80421547,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I type search item \"t-shirt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "t-shirt",
+                  "offset": 20
+                }
+              ],
+              "location": "AddToCartStep.enterSearchItem(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1469239040,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I select search",
+            "match": {
+              "location": "AddToCartStep.submitSearchItem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113063680,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I select a product\"Faded Short Sleeve T-shirts\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Faded Short Sleeve T-shirts",
+                  "offset": 19
+                }
+              ],
+              "location": "AddToCartStep.selectItemForCart(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82941866,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I select AddItemToCart",
+            "match": {
+              "location": "AddToCartStep.selectAddItemToCart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4335419306,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "CheckoutSteps.proceedToCheckout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94242560,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should see \"Faded Short Sleeve T-shirts\" in my Cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Faded Short Sleeve T-shirts",
+                  "offset": 14
+                }
+              ],
+              "location": "CheckoutSteps.seeProductInMyCart(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@checkout"
+          },
+          {
+            "line": 13,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "I want to add item to cart and  purchase item",
+    "description": "",
+    "id": "i-want-to-add-item-to-cart-and--purchase-item",
+    "keyword": "Feature",
+    "uri": "Checkout.feature"
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7554987,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the home page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12128924160,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "User can able to login successfully with valid credentials",
+        "description": "",
+        "id": "user-login-on-automation-practice-website;user-can-able-to-login-successfully-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 801086294,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1297024854,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects SignIn link",
+            "match": {
+              "location": "LoginSteps.selctSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73154560,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should be on the login page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnLoginpage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 280803414,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enter email as \"mineshautomation@gmail.com\" and password as \"automation@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mineshautomation@gmail.com",
+                  "offset": 21
+                },
+                {
+                  "val": "automation@123",
+                  "offset": 66
+                }
+              ],
+              "location": "LoginSteps.enterLoginCredentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1073363200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects SignIn",
+            "match": {
+              "location": "LoginSteps.selectSignIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68691626,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User should be login successfully",
+            "match": {
+              "location": "LoginSteps.isUserLoggedIn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45847893,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see his name as \"m patel\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "m patel",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginSteps.user_should_see_his_name_as_something(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@smoke"
+          },
+          {
+            "line": 9,
+            "name": "@validLogin"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8536747,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the home page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9478661974,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "User should see feedback message, when he provides invalid credentials",
+        "description": "",
+        "id": "user-login-on-automation-practice-website;user-should-see-feedback-message,-when-he-provides-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 876239360,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1318243414,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User selects SignIn link",
+            "match": {
+              "location": "LoginSteps.selctSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80544853,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should be on the login page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnLoginpage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 235150507,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enter email as \"invalid\" and password as \"dfgfdg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 21
+                },
+                {
+                  "val": "dfgfdg",
+                  "offset": 47
+                }
+              ],
+              "location": "LoginSteps.enterLoginCredentials(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 764635733,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User selects SignIn",
+            "match": {
+              "location": "LoginSteps.selectSignIn()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@feedbackMessage"
+          },
+          {
+            "line": 18,
+            "name": "@smoke"
+          },
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8287573,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the home page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9496746667,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "User should see feedback message, when he provides invalid credentials",
+        "description": "",
+        "id": "user-login-on-automation-practice-website;user-should-see-feedback-message,-when-he-provides-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 881778773,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1292922453,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User selects SignIn link",
+            "match": {
+              "location": "LoginSteps.selctSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61989546,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should be on the login page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnLoginpage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 239597226,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enter email as \"sdfdsf@dfsdfds.dsfdsf\" and password as \"sdfdsf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sdfdsf@dfsdfds.dsfdsf",
+                  "offset": 21
+                },
+                {
+                  "val": "sdfdsf",
+                  "offset": 61
+                }
+              ],
+              "location": "LoginSteps.enterLoginCredentials(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 789001386,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User selects SignIn",
+            "match": {
+              "location": "LoginSteps.selectSignIn()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@feedbackMessage"
+          },
+          {
+            "line": 18,
+            "name": "@smoke"
+          },
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7719680,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the home page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8394946987,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "User should see feedback message, when he provides invalid credentials",
+        "description": "",
+        "id": "user-login-on-automation-practice-website;user-should-see-feedback-message,-when-he-provides-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 864796160,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1222507094,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User selects SignIn link",
+            "match": {
+              "location": "LoginSteps.selctSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74213973,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should be on the login page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnLoginpage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 129864106,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enter email as \"\" and password as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 21
+                },
+                {
+                  "val": "",
+                  "offset": 40
+                }
+              ],
+              "location": "LoginSteps.enterLoginCredentials(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 755137280,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User selects SignIn",
+            "match": {
+              "location": "LoginSteps.selectSignIn()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@feedbackMessage"
+          },
+          {
+            "line": 18,
+            "name": "@smoke"
+          },
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "User login on Automation practice website",
+    "description": "As a user\r\nI want to see the login page\r\nSo that I can login successfully",
+    "id": "user-login-on-automation-practice-website",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8887894,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the home page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9175652693,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Registered successfully with mandatory field",
+        "description": "",
+        "id": "regiser-feature-for-www.automationpractice.com-site;registered-successfully-with-mandatory-field;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2815175680,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1291741440,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User selects SignIn link",
+            "match": {
+              "location": "LoginSteps.selctSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77524053,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be on the regitration page",
+            "match": {
+              "location": "RegistrationSteps.verifyUserOnRegistrationPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 197261653,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I enters email as \"minesh77@malinator.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "minesh77@malinator.com",
+                  "offset": 19
+                }
+              ],
+              "location": "RegistrationSteps.enterUserEmaiId(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 105013760,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I select create account button",
+            "match": {
+              "location": "RegistrationSteps.clickOnCreateAnAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1851973973,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I complete personnel information \"Mr\"and\"Steve\"and\"White\"and\"abcde\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mr",
+                  "offset": 34
+                },
+                {
+                  "val": "Steve",
+                  "offset": 41
+                },
+                {
+                  "val": "White",
+                  "offset": 51
+                },
+                {
+                  "val": "abcde",
+                  "offset": 61
+                }
+              ],
+              "location": "RegistrationSteps.enterPersonnelInformation(String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1853168213,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I complete address details \"high street\"and\"chatham\"and\"Alaska\"and \"99501\"and\"United States\"and\"12345678\"and\"newaccount\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "high street",
+                  "offset": 28
+                },
+                {
+                  "val": "chatham",
+                  "offset": 44
+                },
+                {
+                  "val": "Alaska",
+                  "offset": 56
+                },
+                {
+                  "val": "99501",
+                  "offset": 68
+                },
+                {
+                  "val": "United States",
+                  "offset": 78
+                },
+                {
+                  "val": "12345678",
+                  "offset": 96
+                },
+                {
+                  "val": "newaccount",
+                  "offset": 109
+                }
+              ],
+              "location": "RegistrationSteps.enterAddressDetails(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1199933866,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I select register",
+            "match": {
+              "location": "RegistrationSteps.clickOnRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70955520,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should login and see message as \"Welcome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome",
+                  "offset": 35
+                }
+              ],
+              "location": "RegistrationSteps.seeWelcomeLoginMessage(String)"
+            },
+            "matchedColumns": [
+              12
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@smoke"
+          },
+          {
+            "line": 8,
+            "name": "@register"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8124160,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on the home page",
+            "match": {
+              "location": "LoginSteps.verifyUserIsOnHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8404236800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Registration un-successfull with no data",
+        "description": "",
+        "id": "regiser-feature-for-www.automationpractice.com-site;registration-un-successfull-with-no-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 887320747,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1370200747,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User selects SignIn link",
+            "match": {
+              "location": "LoginSteps.selctSignInLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52928853,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User should be on the regitration page",
+            "match": {
+              "location": "RegistrationSteps.verifyUserOnRegistrationPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 154005333,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I enters email as \"minesh66@malinator.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "minesh66@malinator.com",
+                  "offset": 19
+                }
+              ],
+              "location": "RegistrationSteps.enterUserEmaiId(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104709120,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I select create account button",
+            "match": {
+              "location": "RegistrationSteps.clickOnCreateAnAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1560301227,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I complete personnel information \"\"and\"\"and\"\"and\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 34
+                },
+                {
+                  "val": "",
+                  "offset": 39
+                },
+                {
+                  "val": "",
+                  "offset": 44
+                },
+                {
+                  "val": "",
+                  "offset": 49
+                }
+              ],
+              "location": "RegistrationSteps.enterPersonnelInformation(String,String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1595726934,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I complete address details \"\"and\"\"and\"\"and \"\"and\"\"and\"\"and\"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 28
+                },
+                {
+                  "val": "",
+                  "offset": 33
+                },
+                {
+                  "val": "",
+                  "offset": 38
+                },
+                {
+                  "val": "",
+                  "offset": 44
+                },
+                {
+                  "val": "",
+                  "offset": 49
+                },
+                {
+                  "val": "",
+                  "offset": 54
+                },
+                {
+                  "val": "",
+                  "offset": 59
+                }
+              ],
+              "location": "RegistrationSteps.enterAddressDetails(String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 994853973,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I select register",
+            "match": {
+              "location": "RegistrationSteps.clickOnRegister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38980693,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I should see error message as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 31
+                }
+              ],
+              "location": "RegistrationSteps.seeRegistrationErrorMessage(String)"
+            },
+            "matchedColumns": [
+              12
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 24,
+            "name": "@smoke"
+          },
+          {
+            "line": 24,
+            "name": "@register1"
+          }
+        ]
+      }
+    ],
+    "name": "Regiser feature for www.automationpractice.com site",
+    "description": "As a customer\r\nI want to register successfuly for shopping",
+    "id": "regiser-feature-for-www.automationpractice.com-site",
+    "keyword": "Feature",
+    "uri": "Register.feature"
+  }
+]
